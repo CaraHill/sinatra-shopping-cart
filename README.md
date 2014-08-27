@@ -13,7 +13,7 @@ This repository is part of the Personal Project series for Phase 2. This is 1 of
 
 # Server Side App
 
-The goal of this Personal Project is to build a server side web application. For Rubyists this means you will be basing your project off of the [Sinatra Skeleton](https://github.com/kereru-2014/sinatra-skeleton-mvc-challenge) and for Sharpies this will mean creating a new ASP.NET MVC app in Visual Studio.
+The goal of this Personal Project is to build a server side web application. For Rubyists this means you will be basing your project off of the [Sinatra Skeleton](../../../sinatra-skeleton-mvc-challenge) and for Sharpies this will mean creating a new ASP.NET MVC app in Visual Studio.
 
 ### Learning Competencies
 
