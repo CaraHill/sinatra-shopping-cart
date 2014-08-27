@@ -1,6 +1,6 @@
 # Personal Projects
 
-This repository is part of the Personal Project series for Phase 2. This is 1 of the 3 Personal Projects for this phase. These projects are intentially open ended but aim to cover all the Learning Competencies with your project. The instructors are avaliable to answer any questions you have around these projects.
+This repository is part of the Personal Project series for Phase 2. This is 1 of the 3 Personal Projects for this phase. These projects are intentionally open ended but aim to cover all the Learning Competencies with your project. The instructors are available to answer any questions you have around these projects.
 
 ## Submission Process
 
@@ -13,7 +13,7 @@ This repository is part of the Personal Project series for Phase 2. This is 1 of
 
 # Server Side App
 
-The goal of this Personal Project is to build a server side web application. For Rubists this means you will be basing your project off of the [Sinatra Skeleton](https://github.com/kereru-2014/sinatra-skeleton-mvc-challenge) and for Sharpies this will mean creating a new ASP.NET MVC app in Visual Studio.
+The goal of this Personal Project is to build a server side web application. For Rubyists this means you will be basing your project off of the [Sinatra Skeleton](https://github.com/kereru-2014/sinatra-skeleton-mvc-challenge) and for Sharpies this will mean creating a new ASP.NET MVC app in Visual Studio.
 
 ### Learning Competencies
 
@@ -28,7 +28,7 @@ The things we will be looking to see if you have learned in this project are:
   - Use Semantic HTML to structure a website
   - Use CSS selectors to efficiently select any DOM element
   - Understand different CSS selectors and CSS specificity and design your CSS to optimize these
-  - Change basic CSS appearance: colors, widths, padding, margin
+  - Change basic CSS appearance: colours, widths, padding, margin
   - Position elements using CSS positioning, display and float
   - Unit testing
   - Controller testing
