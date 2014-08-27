@@ -37,7 +37,7 @@ The things we will be looking to see if you have learned in this project are:
 
 ### User Stories
 
-We are going to create a online shopping cart.
+We are going to create an online shopping cart.
 
 - A user can view a list of products
 - A user can sign up
