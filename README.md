@@ -30,6 +30,8 @@ The things we will be looking to see if you have learned in this project are:
   - Understand different CSS selectors and CSS specificity and design your CSS to optimize these
   - Change basic CSS appearance: colours, widths, padding, margin
   - Position elements using CSS positioning, display and float
+  - Use ActiveRecord validations
+  - Propagate validation errors up to the view
   - Unit testing
   - Controller testing
 
