@@ -18,19 +18,20 @@ The goal of this Personal Project is to build a server side web application. For
 ### Learning Competencies
 
 The things we will be looking to see if you have learned in this project are:
+
   - Implement CRUD in a MVC application
-  - Use an Active Record to perform CRUD operations on a database
+  - Use an `Active Record` | `Lightspeed` to perform CRUD operations on a database
   - Use RESTful routes
-  - Use Active Record Migrations
-  - Use Active Record Queries
-  - Use Active Record to create Associations between database tables
+  - Use `Active Record` | `Lightspeed` Migrations
+  - Use `Active Record` | `Lightspeed` Queries
+  - Use `Active Record` | `Lightspeed` to create Associations between database tables
   - Implement user login and authentication
   - Use Semantic HTML to structure a website
   - Use CSS selectors to efficiently select any DOM element
   - Understand different CSS selectors and CSS specificity and design your CSS to optimize these
   - Change basic CSS appearance: colours, widths, padding, margin
   - Position elements using CSS positioning, display and float
-  - Use ActiveRecord validations
+  - Use `Active Record` | `Lightspeed` validations
   - Propagate validation errors up to the view
   - Unit testing
   - Controller testing
