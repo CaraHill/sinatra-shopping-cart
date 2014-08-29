@@ -21,7 +21,6 @@ The things we will be looking to see if you have learned in this project are:
 
   - Implement CRUD in a MVC application
   - Use an `Active Record` | `Lightspeed` to perform CRUD operations on a database
-  - Use RESTful routes ([example](http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions))
   - Use `Active Record` | `Lightspeed` Migrations
   - Use `Active Record` | `Lightspeed` Queries
   - Use `Active Record` | `Lightspeed` to create Associations between database tables
@@ -33,6 +32,7 @@ The things we will be looking to see if you have learned in this project are:
   - Position elements using CSS positioning, display and float
   - Use `Active Record` | `Lightspeed` validations
   - Propagate validation errors up to the view
+  - Try use RESTful routes ([example](http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions))
   - Unit testing
   - Controller testing
 
