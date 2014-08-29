@@ -41,7 +41,9 @@ The things we will be looking to see if you have learned in this project are:
 We are going to create an online shopping cart.
 
 - A user can view a list of products
+- A user can view a product in more details on a different page
 - A user can sign up
 - A user can log in
 - A user can select items from the products page to put into their shopping cart
 - A user can remove items from their shopping cart
+- A user can purchase items in their shopping cart (just a button no need to deal with credit card libraries)
