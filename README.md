@@ -19,7 +19,9 @@ The goal of this Personal Project is to build a server side web application. For
 
 The things we will be looking to see if you have learned in this project are:
 
-  - Implement CRUD in a MVC application
+  - **Implement CRUD in a MVC application**
+  - **Unit testing**
+  - **Controller testing**
   - Use an `Active Record` | `Lightspeed` to perform CRUD operations on a database
   - Use `Active Record` | `Lightspeed` Migrations
   - Use `Active Record` | `Lightspeed` Queries
@@ -33,8 +35,6 @@ The things we will be looking to see if you have learned in this project are:
   - Use `Active Record` | `Lightspeed` validations
   - Propagate validation errors up to the view
   - Try use RESTful routes ([example](http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions)) (Sharpies Hint - WebApi)
-  - Unit testing
-  - Controller testing
 
 ### User Stories
 
