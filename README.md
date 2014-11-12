@@ -22,17 +22,17 @@ The things we will be looking to see if you have learned in this project are:
   - **Implement CRUD in a MVC application**
   - **Unit testing**
   - **Controller testing**
-  - Use an `Active Record` | `Lightspeed` to perform CRUD operations on a database
-  - Use `Active Record` | `Lightspeed` Migrations
-  - Use `Active Record` | `Lightspeed` Queries
-  - Use `Active Record` | `Lightspeed` to create Associations between database tables
+  - Use an `Active Record` | `Entity Framework` to perform CRUD operations on a database
+  - Use `Active Record` | `Entity Framework` Migrations
+  - Use `Active Record` | `Entity Framework` Queries
+  - Use `Active Record` | `Entity Framework` to create Associations between database tables
   - Implement user login and authentication
   - Use Semantic HTML to structure a website
   - Use CSS selectors to efficiently select any DOM element
   - Understand different CSS selectors and CSS specificity and design your CSS to optimize these
   - Change basic CSS appearance: colours, widths, padding, margin
   - Position elements using CSS positioning, display and float
-  - Use `Active Record` | `Lightspeed` validations
+  - Use `Active Record` | `Entity Framework` validations
   - Propagate validation errors up to the view
   - Try use RESTful routes ([example](http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions)) (Sharpies Hint - WebApi)
 
