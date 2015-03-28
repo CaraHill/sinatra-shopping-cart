@@ -53,3 +53,5 @@ C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-sid
 C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Personal_Shopping_Cart\Personal_Shopping_Cart\obj\Debug\Personal_Shopping_Cart.csprojResolveAssemblyReference.cache
 C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Personal_Shopping_Cart\Personal_Shopping_Cart\obj\Debug\Personal_Shopping_Cart.dll
 C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Personal_Shopping_Cart\Personal_Shopping_Cart\obj\Debug\Personal_Shopping_Cart.pdb
+C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Personal_Shopping_Cart\Personal_Shopping_Cart\obj\Debug\Personal_Shopping_Cart.Migrations.changed_product_table.resources
+C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Personal_Shopping_Cart\Personal_Shopping_Cart\obj\Debug\Personal_Shopping_Cart.csproj.GenerateResource.Cache

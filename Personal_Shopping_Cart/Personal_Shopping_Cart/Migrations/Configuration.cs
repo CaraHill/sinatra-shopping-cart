@@ -1,3 +1,5 @@
+using Personal_Shopping_Cart.Models;
+
 namespace Personal_Shopping_Cart.Migrations
 {
     using System;
@@ -15,7 +17,16 @@ namespace Personal_Shopping_Cart.Migrations
         protected override void Seed(Personal_Shopping_Cart.Models.ApplicationDbContext context)
         {
 
-
+            context.products.AddOrUpdate(
+              new Product("3 in 1 BreakfastMaker",256.99),
+               new Product("Animal Footprint Shoes",56.99),
+                new Product("BoyFriend Arm Pillow",25.99),
+                 new Product("Finger iPhone stand",36.99),
+                  new Product("Emergency moustache kit",16.99)
+                
+                
+                
+                );
 
             //  This method will be called after migrating to the latest version.
 
