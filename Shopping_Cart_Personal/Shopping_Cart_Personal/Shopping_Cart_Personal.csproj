@@ -161,13 +161,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201503281044166_product_table.cs" />
-    <Compile Include="Migrations\201503281103216_product_table_changed.cs" />
-    <Compile Include="Migrations\201503281103216_product_table_changed.Designer.cs">
-      <DependentUpon>201503281103216_product_table_changed.cs</DependentUpon>
+    <Compile Include="Migrations\201503300707493_initial.cs" />
+    <Compile Include="Migrations\201503300707493_initial.Designer.cs">
+      <DependentUpon>201503300707493_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -186,6 +187,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -233,6 +235,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Demo\Create.cshtml" />
+    <Content Include="Views\Demo\Delete.cshtml" />
+    <Content Include="Views\Demo\Details.cshtml" />
+    <Content Include="Views\Demo\Edit.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\product.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,11 +254,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503281044166_product_table.resx">
-      <DependentUpon>201503281044166_product_table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201503281103216_product_table_changed.resx">
-      <DependentUpon>201503281103216_product_table_changed.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201503300707493_initial.resx">
+      <DependentUpon>201503300707493_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

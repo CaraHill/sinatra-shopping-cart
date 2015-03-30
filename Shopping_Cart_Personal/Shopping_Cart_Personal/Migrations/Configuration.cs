@@ -11,7 +11,7 @@ namespace Shopping_Cart_Personal.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Shopping_Cart_Personal.Models.ApplicationDbContext context)
