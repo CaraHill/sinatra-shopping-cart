@@ -26,5 +26,10 @@ namespace Shopping_Cart_Personal.Models
             ImageUrl = url;
         }
 
+        public Product()
+        {
+            
+        }
+
     }
 }
