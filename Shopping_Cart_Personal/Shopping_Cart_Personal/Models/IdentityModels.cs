@@ -25,7 +25,7 @@ namespace Shopping_Cart_Personal.Models
         {
         }
 
-
+        public DbSet<Shopping_Cart> Items { get; set; }
         public DbSet<Product> Products  { get; set; }
 
         public static ApplicationDbContext Create()
