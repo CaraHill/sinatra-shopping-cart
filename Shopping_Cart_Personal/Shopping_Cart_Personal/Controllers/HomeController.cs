@@ -26,5 +26,11 @@ namespace Shopping_Cart_Personal.Controllers
 
             return View();
         }
+
+
+        public ActionResult Shop()
+        {
+          throw new NotImplementedException();
+        }
     }
 }
