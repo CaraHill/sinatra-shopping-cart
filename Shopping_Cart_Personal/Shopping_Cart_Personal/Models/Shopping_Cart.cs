@@ -8,19 +8,17 @@ namespace Shopping_Cart_Personal.Models
     public class Shopping_Cart
     {
         public int Id { get; set; }
-        public int Quantity { get; set; }
-        public Product product { get; set; }
 
-        public Shopping_Cart(int quantity, Product product)
-        {
-           Quantity = quantity;
-            this.product = product;
-        }
+        public string Name { get; set; }
+        //public int Quantity { get; set; }
 
-        public Shopping_Cart()
-        {
-            
-        }
+        public virtual List<Product > products { get; set; }
+
+      
+
+
+
+   
 
     }
 

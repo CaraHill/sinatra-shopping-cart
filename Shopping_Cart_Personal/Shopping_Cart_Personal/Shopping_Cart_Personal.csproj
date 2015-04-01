@@ -171,6 +171,10 @@
     <Compile Include="Migrations\201503300707493_initial.Designer.cs">
       <DependentUpon>201503300707493_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504010612115_changed_product_table.cs" />
+    <Compile Include="Migrations\201504010612115_changed_product_table.Designer.cs">
+      <DependentUpon>201504010612115_changed_product_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -260,6 +264,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201503300707493_initial.resx">
       <DependentUpon>201503300707493_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504010612115_changed_product_table.resx">
+      <DependentUpon>201504010612115_changed_product_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

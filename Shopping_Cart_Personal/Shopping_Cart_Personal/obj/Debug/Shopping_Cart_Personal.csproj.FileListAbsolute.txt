@@ -55,3 +55,4 @@ C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-sid
 C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Shopping_Cart_Personal\Shopping_Cart_Personal\obj\Debug\Shopping_Cart_Personal.pdb
 C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Shopping_Cart_Personal\Shopping_Cart_Personal\obj\Debug\Shopping_Cart_Personal.Migrations.initial.resources
 C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Shopping_Cart_Personal\Shopping_Cart_Personal\obj\Debug\Shopping_Cart_Personal.csproj.GenerateResource.Cache
+C:\Users\GPADHY\Documents\EDA\phase2\PersonalProject\personal-project-server-side-app\Shopping_Cart_Personal\Shopping_Cart_Personal\obj\Debug\Shopping_Cart_Personal.Migrations.changed_product_table.resources

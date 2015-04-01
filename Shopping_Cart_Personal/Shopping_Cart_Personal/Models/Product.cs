@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Web;
 
 namespace Shopping_Cart_Personal.Models
@@ -15,7 +16,9 @@ namespace Shopping_Cart_Personal.Models
 
         public string ImageUrl { get; set; }
 
+       // public virtual Shopping_Cart Cart { get; set; }
 
+        public int Quantity { get; set; }
 
         public Product(string name, double price,string url)
         {
