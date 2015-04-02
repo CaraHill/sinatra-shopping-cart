@@ -1,0 +1,14 @@
+﻿@using System.Web.Razor.Generator
+@model List<Shopping_Cart_Personal.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+{
+    <p>@Html.ActionLink(@item.Name, "Detail", "Product", new { id = @item.Id }, null)</p>
+    <br/>
+    <img src="@item.ImageUrl"/>    
+}
