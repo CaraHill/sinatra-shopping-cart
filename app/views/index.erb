@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Welcome to Pinup Girl Clothing</h1>
+
+  <ul>
+  <% @products.each do |product| %>
+    <li>
+      <h2><%= product.name %></h2>
+      <p><%= product.image %></p>
+      <p><%= product.description %></p>
+      <p><%= product.price %></p>
+    </li>
+  <% end %>
+</ul>
+</div>
