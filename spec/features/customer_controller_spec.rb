@@ -5,7 +5,7 @@ describe "CustomerController" do
 
   describe "POST /sign_up" do
 
-    before(:all) do
+    before do
       post '/sign_up', {name: "Cara Hill", email: Faker::Internet.email, password: Faker::Internet.password}
     end
 
@@ -14,7 +14,7 @@ describe "CustomerController" do
     end
 
     it "redirects to /" do
-        expect(last_response.header["Location"]).to be('/')
+      expect(last_response.header["Location"]).to eq('http://example.org/')
     end
 
     it "add a new customer to the database" do
