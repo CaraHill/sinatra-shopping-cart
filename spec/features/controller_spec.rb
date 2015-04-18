@@ -3,6 +3,7 @@ require 'faker'
 
 describe "Controller" do
 
+
   describe "GET /" do
 
     before(:all) do
@@ -27,6 +28,41 @@ describe "Controller" do
     end
 
   end
+
+  describe "GET /products" do
+
+    before(:all) do
+      @product = Product.create(name: Faker::Commerce.product_name, image: Faker::Avatar.image, description: Faker::Lorem.paragraph, price: Faker::Commerce.price)
+      get '/products'
+    end
+
+    it "the template contains all the products in the DB" do
+      expect(last_response.body).to include(@product.name)
+    end
+
+    after(:all) do
+      Product.destroy_all
+    end
+
+  end
+
+  # describe "GET /products/#{@product.id}" do
+
+  #   before(:all) do
+  #     @product = Product.create(name: Faker::Commerce.product_name, image: Faker::Avatar.image, description: Faker::Lorem.paragraph, price: Faker::Commerce.price)
+  #     get '/products/#{@product.id}'
+  #   end
+
+  #   it "the template contains all info about the product" do
+  #     expect(last_response.body).to include(@product.description)
+  #   end
+
+  #   after(:all) do
+  #     Product.destroy_all
+  #   end
+
+  # end
+
 
   # describe "POST /cats" do
 

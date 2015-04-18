@@ -5,9 +5,9 @@
   <% @products.each do |product| %>
     <li>
       <h2><%= product.name %></h2>
-      <p><%= product.image %></p>
-      <p><%= product.description %></p>
-      <p><%= product.price %></p>
+      <p><img height="200px" src="<%= product.image %>"></p>
+      <p>$<%= product.price %></p>
+      <a href="/products/<%=product.id%>">Click for more information</a>
     </li>
   <% end %>
 </ul>
