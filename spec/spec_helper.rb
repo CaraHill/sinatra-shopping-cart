@@ -15,8 +15,12 @@ require 'capybara/rspec'
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
+  config.after do
+    Product.destroy_all
+  end
 end
 
 def app
   Sinatra::Application
 end
+
