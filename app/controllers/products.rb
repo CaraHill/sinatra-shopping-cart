@@ -2,12 +2,12 @@ enable :sessions
 
 get '/' do
   @products = Product.all
-  erb :index
+  erb :home_page
 end
 
 get '/products' do
   @products = Product.all
-  erb :index
+  erb :home_page
 end
 
 get '/products/:id' do
@@ -17,5 +17,5 @@ get '/products/:id' do
 end
 
 post '/products' do
-  redirect('/')
+  redirect('/products')
 end
