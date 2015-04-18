@@ -5,5 +5,12 @@
     <p><%= @current_product.description %></p>
     <p>$<%= @current_product.price %></p>
   <%end%>
-
+    <a href="/sign_up">Sign Up</a>
+    <a href="/log_in">Log In</a>
+    <form action="/log_out" method="post">
+      <input type="submit" value="logout">
+    </form>
+    <form action="/products" method="post">
+      <input type="submit" value="Return Home">
+    </form>
 </div>

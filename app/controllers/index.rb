@@ -12,6 +12,7 @@ end
 
 get '/products/:id' do
   @current_product = Product.find_by_id(params[:id])
+  @current_customer = session[:user_id]
   erb :product
 end
 
@@ -43,4 +44,17 @@ post '/log_in' do
     session[:error] = "Invalid email and/or password"
     redirect('/')
   end
+end
+
+get '/log_out' do
+  erb :log_out
+end
+
+post '/log_out' do
+  session.clear
+  redirect '/'
+end
+
+post '/products' do
+  redirect('/')
 end
