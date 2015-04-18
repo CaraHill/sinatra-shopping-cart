@@ -3,8 +3,8 @@ enable :sessions
 get "/products/cart" do
 
   @current_customer = Customer.find_by_id(session[:customer_id])
-  @cart_items = @current_customer.find_products
   if @current_customer
+    @cart_items = @current_customer.find_products
     erb :cart
   else
     redirect '/'

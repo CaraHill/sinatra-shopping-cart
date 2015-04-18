@@ -1,7 +1,7 @@
 <div class="container">
   <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg">
   <br>
-  <a href="/products/cart">Cart (<%=@cart_items.length%>)</a>
+  <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
   <% if @current_customer %>
     <form action="/log_out" method="post">
       <input type="submit" value="Log Out">
