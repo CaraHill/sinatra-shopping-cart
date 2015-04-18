@@ -1,3 +1,7 @@
 class Product < ActiveRecord::Base
-  # Remember to create a migration!
+
+  validates :name, presence: true
+  validates :description, presence: true
+  validates :price, presence: true
+
 end
