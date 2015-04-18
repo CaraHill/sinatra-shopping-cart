@@ -1,6 +1,7 @@
 <div class="container">
   <h1>Welcome to Pinup Girl Clothing</h1>
   <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg"><br>
+  <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
   <% if @current_customer %>
     <form action="/log_out" method="post">
       <input type="submit" value="Log Out">
@@ -9,7 +10,6 @@
     <a href="/sign_up">Sign Up</a>
     <a href="/log_in">Log In</a>
   <%end%>
-  <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
   <ul>
   <h2>Products:</h2>
   <% @products.each do |product| %>
