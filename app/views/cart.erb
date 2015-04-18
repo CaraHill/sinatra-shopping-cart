@@ -6,6 +6,8 @@
       <li> <%= item.name %>, $<%= item.price %></li>
   <%end%>
   <br>
+  <li> Total: $<%= @cart_items.reduce(0) { |sum, obj| sum + obj.price } %></li>
+
   <form action="/products" method="post">
     <input type="submit" value="Return Home">
   </form>
