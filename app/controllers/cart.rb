@@ -17,7 +17,6 @@ post "/add_to_cart" do
   current_product = Product.find_by_id(params[:id])
   order = Order.new(customer_id: current_customer.id, product_id: current_product.id, purchased: false)
   if order.save
-    session[:notice] = "This item has been saved to the cart."
     redirect '/products/cart'
   else
     session[:error] = "This item has not been saved to the cart."

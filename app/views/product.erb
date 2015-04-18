@@ -1,4 +1,7 @@
 <div class="container">
+  <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg">
+  <br>
+  <a href="/products/cart">Cart (<%=@cart_items.length%>)</a>
   <%if @current_product %>
     <h2><%= @current_product.name %></h2>
     <p><img height="300px" src="<%= @current_product.image %>"></p>
