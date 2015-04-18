@@ -1,5 +1,14 @@
 require 'spec_helper'
 
-describe CustomerModel do
-  pending "add some examples to (or delete) /Users/caradev/Desktop/phase_two/personal-project-server-side-app/Rakefile"
+describe "CustomerModel" do
+
+  describe "self.authenticate" do
+
+    it "checks that the customer is in the database" do
+
+
+    end
+
+  end
+
 end
