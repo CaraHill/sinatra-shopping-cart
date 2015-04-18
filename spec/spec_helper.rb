@@ -18,6 +18,9 @@ RSpec.configure do |config|
   config.after do
     Product.destroy_all
   end
+  config.after do
+    Customer.destroy_all
+  end
 end
 
 def app
