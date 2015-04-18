@@ -1,0 +1,16 @@
+<div class="container">
+  <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg">
+  <h1>Shopping Cart</h1>
+
+  <% @cart_items.each do |item| %>
+      <li> <%= item.name %>, $<%= item.price %></li>
+  <%end%>
+  <br>
+  <form action="/products" method="post">
+    <input type="submit" value="Return Home">
+  </form>
+  <br>
+  <form action="/log_out" method="post">
+      <input type="submit" value="Log Out">
+    </form>
+</div>

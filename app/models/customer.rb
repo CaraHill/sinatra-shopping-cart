@@ -5,12 +5,19 @@ class Customer < ActiveRecord::Base
 
   validates :email, uniqueness: true
 
+  has_many :orders
+  has_many :products, through: :orders
+
   def self.authenticate(email, password)
     if customer = Customer.find_by(email: email)
       customer if SCrypt::Password.new(customer.password) == password
     else
       nil
     end
+  end
+
+  def find_products
+    orders.unpurchased.map { |order| order.product  }
   end
 
   private

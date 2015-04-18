@@ -13,6 +13,10 @@
     <a href="/sign_up">Sign Up</a>
     <a href="/log_in">Log In</a>
   <%end%>
+    <form action="/add_to_cart" method="post">
+      <input type="hidden" name="id" value="<%=@current_product.id%>">
+      <input type="submit" value="Add to Cart">
+    </form>
     <form action="/products" method="post">
       <input type="submit" value="Return Home">
     </form>
