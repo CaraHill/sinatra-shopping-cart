@@ -1,11 +1,14 @@
 enable :sessions
 
+before do
+  @current_customer = Customer.find_by_id(session[:customer_id])
+  @current_product = Product.find_by_id(params[:id])
+end
+
 get "/products/cart" do
 
-  @current_customer = Customer.find_by_id(session[:customer_id])
   if @current_customer
     @cart_items = @current_customer.find_products
-    p @cart_items
     erb :cart
   else
     redirect '/'
@@ -14,9 +17,8 @@ get "/products/cart" do
 end
 
 post "/add_to_cart" do
-  current_customer = Customer.find_by_id(session[:customer_id])
-  current_product = Product.find_by_id(params[:id])
-  order = Order.new(customer_id: current_customer.id, product_id: current_product.id, purchased: false)
+
+  order = Order.new(customer_id: @current_customer.id, product_id: @current_product.id, purchased: false)
   if order.save
     redirect '/products/cart'
   else
@@ -32,7 +34,7 @@ post '/buy_now' do
 end
 
 post '/remove_from_cart' do
-  current_product = Product.find_by_id(params[:id])
-  order = Order.where(product_id: current_product.id).destroy_all
+
+  order = Order.where(product_id: @current_product.id).destroy_all
   redirect back
 end
