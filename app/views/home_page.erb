@@ -18,6 +18,10 @@
       <p><img height="200px" src="<%= product.image %>"></p>
       <p>$<%= product.price %></p>
       <a href="/products/<%=product.id%>">Click for more information</a>
+      <form action="/add_to_cart" method="post">
+        <input type="hidden" name="id" value="<%=product.id%>">
+        <input type="submit" value="Add to Cart">
+      </form>
     </li>
   <% end %>
 </ul>
