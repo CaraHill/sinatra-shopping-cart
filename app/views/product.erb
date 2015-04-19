@@ -1,7 +1,9 @@
 <div class="container">
   <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg">
   <br>
+
   <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
+
   <% if @current_customer %>
     <form action="/log_out" method="post">
       <input type="submit" value="Log Out">
@@ -10,17 +12,20 @@
     <a href="/sign_up">Sign Up</a>
     <a href="/log_in">Log In</a>
   <%end%>
+
   <%if @current_product %>
     <h2><%= @current_product.name %></h2>
     <p><img height="300px" src="<%= @current_product.image %>"></p>
     <p><%= @current_product.description %></p>
     <p>$<%= @current_product.price %></p>
   <%end%>
-    <form action="/add_to_cart" method="post">
-      <input type="hidden" name="id" value="<%=@current_product.id%>">
-      <input type="submit" value="Add to Cart">
-    </form>
-    <form action="/products" method="post">
-      <input type="submit" value="Return Home">
-    </form>
+
+  <form action="/add_to_cart" method="post">
+    <input type="hidden" name="id" value="<%=@current_product.id%>">
+    <input type="submit" value="Add to Cart">
+  </form>
+
+  <form action="/products" method="post">
+    <input type="submit" value="Return Home">
+  </form>
 </div>

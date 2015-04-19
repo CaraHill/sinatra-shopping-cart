@@ -1,7 +1,9 @@
 <div class="container">
   <h1>Welcome to Pinup Girl Clothing</h1>
   <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg"><br>
+
   <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
+
   <% if @current_customer %>
     <form action="/log_out" method="post">
       <input type="submit" value="Log Out">
@@ -10,19 +12,21 @@
     <a href="/sign_up">Sign Up</a>
     <a href="/log_in">Log In</a>
   <%end%>
+
   <ul>
-  <h2>Products:</h2>
-  <% @products.each do |product| %>
-    <li>
-      <h3><%= product.name %></h3>
-      <p><img height="200px" src="<%= product.image %>"></p>
-      <p>$<%= product.price %></p>
-      <a href="/products/<%=product.id%>">Click for more information</a>
-      <form action="/add_to_cart" method="post">
-        <input type="hidden" name="id" value="<%=product.id%>">
-        <input type="submit" value="Add to Cart">
-      </form>
-    </li>
-  <% end %>
-</ul>
+    <h2>Products:</h2>
+    <% @products.each do |product| %>
+      <li>
+        <h3><%= product.name %></h3>
+        <p><img height="200px" src="<%= product.image %>"></p>
+        <p>$<%= product.price %></p>
+        <a href="/products/<%=product.id%>">Click for more information</a>
+
+        <form action="/add_to_cart" method="post">
+          <input type="hidden" name="id" value="<%=product.id%>">
+          <input type="submit" value="Add to Cart">
+        </form>
+      </li>
+    <% end %>
+  </ul>
 </div>
