@@ -5,6 +5,8 @@ class Customer < ActiveRecord::Base
 
   validates :email, uniqueness: true
   validates_format_of :email, :with => /@/
+  validates_length_of :password, :in => 6..10
+  validates :password, uniqueness: true
 
   has_many :orders
   has_many :products, through: :orders
