@@ -27,5 +27,11 @@ end
 post '/buy_now' do
   Order.destroy_all
   session[:notice] = "You have purchased all items in your cart. Thank you for shopping with us."
+  redirect '/products/cart'
+end
+
+post '/remove_from_cart' do
+  current_product = Product.find_by_id(params[:id])
+  order = Order.where(product_id: current_product.id).destroy_all
   redirect back
 end

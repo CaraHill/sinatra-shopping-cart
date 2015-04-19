@@ -3,7 +3,12 @@
   <h1>Shopping Cart</h1>
 
   <% @cart_items.each do |item| %>
-      <li> <%= item.name %>, $<%= item.price %></li>
+      <li> <%= item.name %>, $<%= item.price %>
+        <form action="/remove_from_cart" method="post">
+      <input type="hidden" name="id" value="<%=item.id%>">
+      <input type="submit" value="Remove from Cart">
+    </form>
+      </li>
   <%end%>
   <br>
   <li> Total: $<%= @cart_items.reduce(0) { |sum, obj| sum + obj.price } %></li>
