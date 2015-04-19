@@ -4,6 +4,7 @@ class Customer < ActiveRecord::Base
   before_save :encrypt_password
 
   validates :email, uniqueness: true
+  validates_format_of :email, :with => /@/
 
   has_many :orders
   has_many :products, through: :orders
