@@ -3,6 +3,9 @@ enable :sessions
 get '/' do
   @products = Product.all
   @current_customer = Customer.find_by_id(session[:customer_id])
+  if @current_customer
+    @cart_items = @current_customer.find_products
+  end
   session[:notice] = nil
   erb :home_page
 end
@@ -10,6 +13,9 @@ end
 get '/products' do
   @products = Product.all
   @current_customer = Customer.find_by_id(session[:customer_id])
+  if @current_customer
+    @cart_items = @current_customer.find_products
+  end
   session[:notice] = nil
   erb :home_page
 end

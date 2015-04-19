@@ -5,6 +5,7 @@ get "/products/cart" do
   @current_customer = Customer.find_by_id(session[:customer_id])
   if @current_customer
     @cart_items = @current_customer.find_products
+    p @cart_items
     erb :cart
   else
     redirect '/'
