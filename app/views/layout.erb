@@ -15,13 +15,20 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Cara's Pinup Girl Clothing Shopping Cart.</title>
 </head>
+<header>
+  <h1>Welcome to Pinup Girl Clothing</h1>
+  <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg">
+</header>
 <body>
   <div class="error">
     <%= session[:error] %>
     <%= session[:notice] %>
   </div>
   <%= yield %>
+  <footer>
+      <p>&copy; 2015 Cara Hill - Pinup Girl Clothing.</p>
+  </footer>
 </body>
 </html>
