@@ -1,17 +1,18 @@
 <div class="container">
+  <nav>
+    <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
+    <br>
+    <% if @current_customer %>
+      <form action="/log_out" method="post">
+        <input type="submit" value="Log Out">
+      </form>
+    <% else %>
+      <a href="/sign_up">Sign Up</a>
+      <a href="/log_in">Log In</a>
+    <%end%>
+  </nav>
 
-  <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
-
-  <% if @current_customer %>
-    <form action="/log_out" method="post">
-      <input type="submit" value="Log Out">
-    </form>
-  <% else %>
-    <a href="/sign_up">Sign Up</a>
-    <a href="/log_in">Log In</a>
-  <%end%>
-
-  <ul>
+  <ul class="gallery">
     <h2>Products:</h2>
     <% @products.each do |product| %>
       <li>

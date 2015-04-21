@@ -1,25 +1,25 @@
 <div class="container">
-  <img id='logo' src="http://newnoisemagazine.com/wp-content/uploads/2014/08/Pinup-Girl-Clothing-logo-2014.jpg">
 
   <h1>Shopping Cart</h1>
-
-  <% @cart_items.each do |item| %>
-      <li> <%= item.name %>, $<%= item.price %>
-        <form action="/remove_from_cart" method="post">
-          <input type="hidden" name="id" value="<%=item.id%>">
-          <input type="submit" value="Remove from Cart">
-        </form>
-      </li>
-  <%end%>
+  <nav>
+    <p><% @cart_items.each do |item| %>
+        <li> <%= item.name %>, $<%= item.price %>
+          <form action="/remove_from_cart" method="post">
+            <input type="hidden" name="id" value="<%=item.id%>">
+            <input type="submit" value="Remove from Cart">
+          </form>
+        </li>
+    <%end%></p>
+  </nav>
 
   <br>
-  <li> Total: $<%= @cart_items.reduce(0) { |sum, obj| sum + obj.price } %></li>
+  <p id="cart-total"> Total: $<%= @cart_items.reduce(0) { |sum, obj| sum + obj.price } %></p>
   <br>
 
   <form action="/buy_now" method="post">
       <input type="submit" value="Buy Now">
   </form>
-
+  <br>
   <form action="/products" method="post">
     <input type="submit" value="Continue Shopping">
   </form>

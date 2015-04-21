@@ -1,16 +1,17 @@
 <div class="container">
   <br>
-
-  <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
-
-  <% if @current_customer %>
-    <form action="/log_out" method="post">
-      <input type="submit" value="Log Out">
-    </form>
-  <% else %>
-    <a href="/sign_up">Sign Up</a>
-    <a href="/log_in">Log In</a>
-  <%end%>
+  <nav>
+    <a href="/products/cart">Cart (<%=@cart_items ? @cart_items.length : "0" %>)</a>
+    <br>
+    <% if @current_customer %>
+      <form action="/log_out" method="post">
+        <input type="submit" value="Log Out">
+      </form>
+    <% else %>
+      <a href="/sign_up">Sign Up</a>
+      <a href="/log_in">Log In</a>
+    <%end%>
+  </nav>
 
   <%if @current_product %>
     <h2><%= @current_product.name %></h2>
@@ -23,7 +24,7 @@
     <input type="hidden" name="id" value="<%=@current_product.id%>">
     <input type="submit" value="Add to Cart">
   </form>
-
+  <br>
   <form action="/products" method="post">
     <input type="submit" value="Return Home">
   </form>
