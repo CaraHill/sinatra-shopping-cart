@@ -16,6 +16,11 @@ body {
   padding: 20px;
   background-color: #FFECEA;
   overflow: auto;
+  vertical-align: middle;
+}
+
+#product-list-title {
+  text-align: center;
 }
 
 a {
@@ -40,7 +45,7 @@ header {
 NAVIGATION
 *************************/
 nav {
-  text-align: left;
+  text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
 }
@@ -60,17 +65,20 @@ PRODUCTS
 *************************/
 
 .gallery li {
-  margin: 2.5%;
+  margin: 5%;
   background-color: #FFECEA;
   color: #470C3B;
-  margin-bottom: 0px;
   float: left;
   list-style: none;
 }
 
 /************************
-FOOTER
+CART
 *************************/
+.cart {
+  list-style: none;
+}
+
 #cart-total {
   font-size: 1.25em;
   font-weight: bold;

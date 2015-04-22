@@ -1,7 +1,7 @@
 <div class="container">
 
   <h1>Shopping Cart</h1>
-  <nav>
+  <ul class="cart">
     <p><% @cart_items.each do |item| %>
         <li> <%= item.name %>, $<%= item.price %>
           <form action="/remove_from_cart" method="post">
@@ -10,7 +10,7 @@
           </form>
         </li>
     <%end%></p>
-  </nav>
+  </ul>
 
   <br>
   <p id="cart-total"> Total: $<%= @cart_items.reduce(0) { |sum, obj| sum + obj.price } %></p>
